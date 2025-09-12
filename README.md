@@ -1,7 +1,7 @@
 # Lab 1: Coffee Sales Data Visualizations
 
 ## Introduction
-This Lab 1 assignment explores a dataset of coffee sales (`coffee_sales.csv`) to check Python setup and practice data visualization. The dataset includes information about the time of sale, coffee type, payment method, amount spent, and other temporal details. The goal is to visualize patterns in sales, money spent, and trends over time using Python libraries such as Matplotlib and Seaborn.
+This Lab 1 assignment explores a dataset of coffee sales (`coffee_sales.csv`) (https://www.kaggle.com/datasets/navjotkaushal/coffee-sales-dataset) to check Python setup and practice data visualization. The dataset includes information about the time of sale, coffee type, payment method, amount spent, and other temporal details. The goal is to visualize patterns in sales, money spent, and trends over time using Python libraries such as Matplotlib and Seaborn.
 
 ## Visualizations
 
