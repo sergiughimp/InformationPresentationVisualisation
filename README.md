@@ -22,3 +22,24 @@ A Seaborn heatmap displaying money spent across weekdays and times of the day. T
 
 ## Summary
 These visualizations provide an overview of coffee sales behavior from the `coffee_sales.csv` dataset, showing product popularity, peak hours, weekday trends, and overall sales patterns. This Lab 1 exercise also demonstrates the use of Matplotlib and Seaborn for effective data visualization in Python.
+
+***
+
+# Lab 2: Movies Data Visualizations
+
+## Introduction
+This Lab 2 assignment explores the Movies dataset from the Vega datasets library.  
+The dataset includes information about movie titles, gross earnings, production budgets, release dates, ratings, and genres.  
+The goal is to practice data visualization in Python using Altair and learn how to present data clearly and effectively.
+
+## Task 1: Explore the Movies Dataset
+
+**a) Load the Movies Dataset**  
+Load the movies dataset using the Vega datasets library.
+
+**b) Inspect Data Types and Preview Data**  
+Check the first few rows and data types to understand the available information.
+
+**c) Count the Number of Movies by Genre**  
+A bar chart shows the number of movies in each major genre.  
+This identifies which genres are most common and which are less frequent.
