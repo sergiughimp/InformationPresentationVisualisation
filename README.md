@@ -43,3 +43,75 @@ Check the first few rows and data types to understand the available information.
 **c) Count the Number of Movies by Genre**  
 A bar chart shows the number of movies in each major genre.  
 This identifies which genres are most common and which are less frequent.
+
+## Task 2: Create Basic Visualizations
+
+**a) Bar Chart of Movies by Major Genre**  
+A bar chart showing the number of movies in each major genre.  
+This highlights the most common genres and those with fewer movies.
+
+**b) Histogram of Movies by Rotten Tomatoes Rating**  
+A histogram displaying the distribution of movies based on Rotten Tomatoes ratings.  
+Movies are grouped by rating ranges, showing which ratings are most common.
+
+**c) Scatter Plot of Worldwide Gross vs Production Budget**  
+A scatter plot showing the relationship between a movie's production budget and worldwide gross earnings.  
+This visualizes how budget relates to box office performance.
+
+
+## Task 3: Add Interactivity to Visualizations
+
+**a) Scatter Plot with Tooltips**  
+A scatter plot showing worldwide gross versus production budget with interactive tooltips.  
+Tooltips display movie title, genre, production budget, and worldwide gross for each point.
+
+**b) Scatter Plot with Slider Filter**  
+An interactive scatter plot including a slider to filter movies by minimum Rotten Tomatoes rating.  
+The plot updates dynamically to show only movies with ratings above the selected value, while still displaying tooltips for detailed information.
+
+## Task 4: Build a Mini Dashboard
+
+**a) Top Row: Bar Chart and Histogram**  
+The bar chart of movies by genre and the histogram of Rotten Tomatoes ratings are placed side by side.  
+This allows comparison of genre distribution and rating patterns in a single view.
+
+**b) Bottom Row: Scatter Plots**  
+The scatter plot of worldwide gross vs production budget and the interactive scatter plot with tooltips and slider are displayed side by side.  
+This enables exploration of budget and gross relationships along with interactive filtering by Rotten Tomatoes rating.
+
+**c) Full Dashboard**  
+The top and bottom rows are combined vertically to form a complete mini dashboard.  
+The dashboard provides a comprehensive overview of the Movies dataset in one interactive layout.
+
+## Task 5: Analyze and Interpret Data Visualizations
+
+Selected Visualization: Bar chart showing the number of movies by major genre (Task 2.a)
+
+**a) Describe**  
+Drama and Comedy have the tallest bars, showing that most movies belong to these genres. Action movies are also common, while genres like Western or Concert/Performance are rare.
+
+**b) Analyse**  
+Genres are on the x-axis and number of movies on the y-axis, making it easy to compare which genres have more or fewer movies.
+
+**c) Visual Encodings**  
+- Height of the bar = number of movies  
+- Color of the bar = genre  
+- Tooltip shows genre name and exact count  
+
+**d) Task / Purpose**  
+Shows which movie genres are most common and which are rare.
+
+**e) Decide / Effectiveness**  
+The visualization is successful: clear, easy to read, and shows patterns in the data immediately.
+
+## Summary: Movies Data Visualizations
+
+This lab explores the Movies dataset using Python and Altair, focusing on data visualization and interactive analysis.  
+
+- **Task 1:** Explore the dataset by loading it, inspecting data types, and counting the number of movies by genre.  
+- **Task 2:** Create basic visualizations including a bar chart of movies by genre, a histogram of Rotten Tomatoes ratings, and a scatter plot of worldwide gross vs production budget.  
+- **Task 3:** Add interactivity with tooltips on the scatter plot and a slider to filter movies by Rotten Tomatoes rating.  
+- **Task 4:** Build a mini dashboard by combining all charts into a single view using horizontal and vertical concatenation.  
+- **Task 5:** Analyze and interpret one visualization (bar chart by genre), describing patterns, visual encodings, purpose, and effectiveness.  
+
+The lab demonstrates how to explore, visualize, and interact with data to extract insights clearly and effectively.
