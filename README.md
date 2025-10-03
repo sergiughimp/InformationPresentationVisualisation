@@ -249,3 +249,110 @@ The chart allows easy comparison of car counts by origin.
 ## Summary
 These visualizations provide an overview of different datasets using Python and Altair, showing relationships, trends, distributions, and patterns. The lab demonstrates scatter plots, line charts, bar charts, stacked bars, streamgraphs, indexed line charts, heatmaps, parallel coordinates plots, and pie charts, highlighting how to choose the right visualization type for a given data task and making data exploration interactive and clear.
 
+# Lab 3: Color
+
+## Introduction
+The exercises focus on key concepts in colour usage, including perceptual and cognitive aspects, colour encoding, and the creation of visually appealing and interpretable plots. 
+
+
+## **Task 1: Load and Clean Data, Compute Centroids**
+
+**a) Load the dataset**  
+- Load the `synthetic_cars.csv` dataset using `pandas`.  
+- Display the initial rows of the dataset to inspect the structure and sample data.  
+
+**b) Inspect data**  
+- Check column names, data types, and overall dataset info.  
+- Identify missing values and count occurrences.  
+- Check unique car brand names before cleaning.  
+
+**c) Correct misspellings**  
+- Map incorrectly spelled car brand names to their correct forms using a dictionary.  
+- Apply corrections to the `Car` column in the DataFrame.  
+- Verify unique car brand names after cleaning.  
+
+**d) Compute RGB centroids per car brand**  
+- Group the dataset by car brand and compute the mean of the `R`, `G`, and `B` columns.  
+- Rename the resulting columns as `centroid_R`, `centroid_G`, `centroid_B`.  
+- Display the centroid values for each car brand.
+
+---
+
+## **Task 2: Colour Maps in Data Visualisation**
+
+**a) Count entries per car brand**  
+- Count the number of cars for each brand using `value_counts()`.  
+
+**b) Sequential colormap**  
+- Create a pie chart using a sequential colormap (`Blues`).  
+- Useful for ordered data representation, e.g., lighter → darker.  
+
+**c) Categorical colormap**  
+- Create a pie chart using a categorical colormap (`tab10`).  
+- Ideal for distinguishing discrete categories clearly.  
+
+**d) Diverging colormap**  
+- Create a pie chart using a diverging colormap (`coolwarm`).  
+- Highlights differences from a midpoint and emphasizes contrast.
+
+---
+
+## **Task 3: Create a Perceptually Uniform Colour Gradient**
+
+**a) Define colours**  
+- Choose yellow and blue as start and end colours in RGB format.  
+
+**b) Convert to CIELAB**  
+- Convert RGB → CIEXYZ → CIELAB to work in a perceptually uniform colour space.  
+
+**c) Interpolate gradient**  
+- Create `n` evenly spaced steps between the start and end colours in CIELAB space.  
+
+**d) Convert back to RGB and plot**  
+- Convert the gradient back to RGB for plotting.  
+- Display a smooth perceptually uniform gradient from yellow to blue.
+
+---
+
+## **Task 4: Colour Vision Variance in Data Visualisation**
+
+**a) Save categorical pie chart**  
+- Save the categorical pie chart as an image for further analysis.  
+
+**b) Simulate colour blindness**  
+- Upload the saved image to [COBLIS Colour Blindness Simulator](https://www.color-blindness.com/coblis-color-blindness-simulator/).  
+- Observe how the chart appears for different types of colour vision deficiencies.  
+- Document differences and consider implications for visual accessibility.
+
+---
+
+## **Summary**
+
+These tasks provided hands-on practice in **data cleaning, colour-based data summarisation, and visualisation**:  
+
+- **Task 1** demonstrated loading data, cleaning brand names, and computing average RGB values.  
+- **Task 2** explored the use of sequential, categorical, and diverging colour maps in pie charts.  
+- **Task 3** focused on creating perceptually uniform gradients using the CIELAB colour space.  
+- **Task 4** highlighted the importance of considering colour vision deficiencies in data visualisation to ensure accessibility and accurate interpretation.  
+
+Overall, the lab emphasizes both technical skills in data manipulation and best practices in using colour effectively for clear and inclusive visual communication.
+
+---
+
+## **Technologies & Libraries**
+- Python 3.x  
+- Pandas  
+- Matplotlib  
+- NumPy  
+- Colour (CIELAB and colour space conversions)  
+
+---
+
+## **Files**
+- `synthetic_cars.csv` – Dataset with car brands and RGB values.  
+- `04_Lab_IPDV_Colour-1-Homework.ipynb` – Jupyter Notebook containing all tasks.  
+- `categorical_car_pie_chart.png` – Saved categorical pie chart for colour blindness analysis. 
+
+
+
+
