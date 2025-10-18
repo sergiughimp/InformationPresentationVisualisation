@@ -249,7 +249,7 @@ The chart allows easy comparison of car counts by origin.
 ## Summary
 These visualizations provide an overview of different datasets using Python and Altair, showing relationships, trends, distributions, and patterns. The lab demonstrates scatter plots, line charts, bar charts, stacked bars, streamgraphs, indexed line charts, heatmaps, parallel coordinates plots, and pie charts, highlighting how to choose the right visualization type for a given data task and making data exploration interactive and clear.
 
-# Lab 3: Color
+# Lab 4: Color
 
 ## Introduction
 The exercises focus on key concepts in colour usage, including perceptual and cognitive aspects, colour encoding, and the creation of visually appealing and interpretable plots. 
@@ -354,5 +354,85 @@ Overall, the lab emphasizes both technical skills in data manipulation and best 
 - `categorical_car_pie_chart.png` – Saved categorical pie chart for colour blindness analysis. 
 
 
+# Lab 5 – Interactive and Animated Data Visualisations
+
+This repository contains **Lab 5**, focused on creating **interactive and animated data visualisations** using **Altair** and the **Vega Datasets**. The lab demonstrates how to communicate data insights effectively, considering audience needs and data literacy.
+
+## Tasks Overview
+
+### 1. Understanding Your Audience
+- Created two user personas:  
+  - **Liam** – Financial Analyst (high data literacy)  
+  - **Mia** – Marketing Coordinator (medium data literacy)  
+- Generated accurate and misleading interpretations of a sales dataset and analysed their impact on different audiences.
+
+### 2. Interactive Scatter Plot
+- Visualises the relationship between `Horsepower` and `Miles_per_Gallon` from the cars dataset.  
+- Points are colored by `Origin` and sized by `Horsepower`, with interactive tooltips, zoom, and pan.
+
+### 3. Animated Line Plot
+- Plots `IBM` stock prices over time from the stocks dataset.  
+- Includes hover tooltips and zooming for interactive exploration.
+
+### 4. Interactive Bar Chart
+- Shows the number of movies per genre using the movies dataset.  
+- Features a dropdown to filter by genre and highlight selected bars interactively.
+
+### 5. Animated Histogram
+- Displays a histogram of `Miles_per_Gallon` for cars.  
+- Includes a dynamic slider to filter the maximum MPG, updating the histogram in real-time.
+
+### 6. Interactive Map
+- Visualises flight routes from the `flights_5k` and `airports` datasets.  
+- Users can filter routes by origin airport using a dropdown.  
+- Includes tooltips, zooming, and panning for interactive exploration.
+
+## Key Highlights
+- Focus on **user-centric design** and data literacy considerations.  
+- Demonstrates **interactive and animated visualisation techniques** in Altair.  
+- Combines multiple datasets for meaningful insights.  
+- All visualisations include **tooltips, filtering, and interactivity** for better engagement.
+
+## Repository Structure
+- `Lab5.ipynb` – Jupyter Notebook containing all tasks, code, and visualisations.  
+- Datasets are loaded directly from **Vega Datasets**.
+
+
+# Lab 6 – Maps and Scientific Visualisations
+
+This repository contains **Lab 6**, focused on **map projections, interactive choropleth maps, and statistical visualisations**. The lab demonstrates how to communicate geographic and scientific data effectively using Python libraries such as **Altair**, **Seaborn**, and **Matplotlib**, along with datasets from **Vega Datasets** and `iris`.
+
+## Tasks Overview
+
+### 1. London to Boston Using Different Map Projections
+- Compared multiple world map projections: Natural Earth, Mercator, Equirectangular, Orthographic, Azimuthal Equidistant, and Stereographic.  
+- Drew a line connecting London and Boston to observe how map projections affect the visual representation of distance.  
+- Added city points and labels for clarity.
+
+### 2. Combining Multiple Data Sources on a Map
+- Merged the `world_110m` dataset with life expectancy data from **Gapminder**.  
+- Created an interactive map showing **country names, abbreviations, and life expectancy in 2005**.  
+- Demonstrated data cleaning, matching country IDs, and creating an interactive choropleth map.
+
+### 3. Interactive US Unemployment Map
+- Visualised county-level unemployment rates in the United States.  
+- Categorised rates into 5 groups with a custom color palette.  
+- Added tooltips, zoom/pan, and interactivity for detailed exploration.
+
+### 4. Comparative Statistical Visualisation
+- Compared **petal length distributions across iris species** using **box plots** and **violin plots**.  
+- Applied statistical analyses including ANOVA and pairwise t-tests with Bonferroni correction.  
+- Interpreted results to highlight significant differences between species.
+
+## Key Highlights
+- Explores **geographical and statistical data visualisation techniques**.  
+- Demonstrates **interactive maps, choropleth maps, and projections** in Altair.  
+- Combines multiple data sources to generate meaningful insights.  
+- Uses **Seaborn and Matplotlib** for statistical comparisons and visual analysis.  
+- Focus on **clarity, interactivity, and interpretability** of visualisations.
+
+## Repository Structure
+- `Lab6.ipynb` – Jupyter Notebook containing all tasks, code, and visualisations.  
+- Datasets are loaded from **Vega Datasets** and public JSON sources.
 
 
