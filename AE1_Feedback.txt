@@ -1,0 +1,70 @@
+18 Nov at 15:54
+Student 1 
+Rubric
+1)    Task 1:        8/10 points
+2)    Task 2:        8/10 points 
+3)    Task 3:        12/20 points 
+4)    Task 4:        14/20 points 
+5)    Task 5:         16/20 points 
+6)    Task 6:         6/10 points 
+7)    LP:             4/10 points 
+Total:             68/100 points
+Summary:
+This is a very good report that demonstrates engagement of the student with the topics covered by the assignment. This assignment aimed to develop students’ skills in terms of critiquing, preparing, analysing and visualising colour naming data. Code in Python was implemented and submitted as an HTML export of a Jupyter Notebook. The notebook provides a critique of an existing visualisation (Task 1); cleans and prepares the colour naming dataset (Task 2); creates informative visualisations using interactive dashboards (Task 3); produces a misinformative visualisation demonstrating data manipulation techniques (Task 4); implements an interactive geo map, a bar plot and pie chart with categorical colour palettes (Task 5); and reflects on the process and ethical considerations (Task 6). The report was of a very good standard and demonstrates competent technical implementation with clear documentation. Yet more could be done to justify design decisions with theoretical grounding, expand the data preparation beyond basic cleaning, and develop deeper analytical rationales for visualisation choices. Some learning outcomes were achieved as set out in the table. I have worked out my issues below.
+Strengths:
+•    Clear title and well-structured and styled report 
+•    Good step-by-step data cleaning workflow with clear documentation
+•    Effective use of Altair for creating interactive visualisations
+•    Code is well-commented and readable throughout
+•    Good use of colour encoding with actual RGB values
+Areas for Improvement:
+Task 1 (8/10):
+•    Your critique identifies key issues appropriately. To strengthen it further, you could explicitly discuss Weber's Law regarding angle comparison difficulty and the principle of discriminability with more technical detail. 
+•    Your suggestions are practical but need deeper theoretical grounding in perceptual principles covered in lectures.
+Task 2 (8/10):
+•    You could have attempted to fix misspellings in the data (e.g., using spell-checking libraries or fuzzy matching)
+•    Make colour names consistent, such as standardising "gray" and "grey" to British English spelling
+•    You should justify why you removed names with fewer than 5 responses rather than 10 or 20? What percentage of the dataset does this represent?
+•    The definition of broader colour groups is not justified numerically. You grouped them based on a hard-coded list of synonyms, but you could have used a similarity measure (e.g., Euclidean distance or, even better, Hellinger distance) to do this in a data-driven way
+•    In your scatter plot showing the mean colour for each broader group, you could have added a label for that group to be always visible and shown the numerical RGB values (as you do now) but without decimals on hover (9 decimal places for an RGB value is tot needed)
+Task 3 (12/20):
+•    You should justify why you selected the top 20 colour names for the bar plot rather than the top 10? 
+•    You plot the colour names without the classification into broader colours from your previous task, which may confuse the user here
+•    You should report frequencies in relative terms (percentages) rather than absolute counts for better interpretability
+•    Why did you choose 50 colour names in your scatter plot and not 20? You need justification or, at the very least, consistency in your decisions
+•    In your scatter plot, you do not show the distribution of each colour name as you describe in your title and text, but rather a single point (mean). To show the distribution, you could have used ellipsoids or plotted all the samples for each colour name, coloured with the corresponding centroid
+•    The axes labels of your scatter plot are misleading. You do not show the mean red or green but the range of the channel; your points represent the mean for each colour name
+Task 4 (12/20):
+•    Again, the bar plot shows frequency in absolute rather than relative terms, which makes comparisons difficult
+•    Your effort to mislead is too obvious (drawing a purple bar as green). For example, you could have used a 3D pie chart and used perspective to mislead the viewer perceptually that brown is bigger than green, as Steve Jobs did for Apple products! In other words, you manipulate the actual data to mislead rather than using perception cleverly enough to trick the viewer visually
+•    The key is to use the same data but demonstrate that you understand perception well enough to deceive visually, not just alter the data that is just a clear cheating.
+Task 5 (14/20):
+•    You import the same libraries and load the same dataset repeatedly throughout the notebook
+•    Instead of using the average RGB representations for each colour name that you computed earlier, you hard-coded the hex colour for each name
+•    The colour selection does not correspond to the data you assigned but is rather random. For example, you could have used red for high numbers of responses, yellow for mid-range, and blue for low responses, creating a meaningful sequential colour scheme
+Task 6 (6/10):
+•    This is too general. Include specific examples of challenges encountered and how you addressed them
+•    Provide concrete instances of ethical decisions in your work, not just general principles
+•    Discuss trade-offs between design choices with examples
+•    Reflect on what you learnt and what would approach differently
+Language (4/10): 
+•    No figure numbering or captions
+•    No acknowledgement of AI assistance used and obvious repetitions of AI generated outputs without any editing effort
+•    Use consistently British English spelling (eg. color should be spelled colour) throughout
+Overall: 
+•    You keep importing the same libraries repeatedly for each task. You should import them only once at the top to avoid repetition and demonstrate that you understand how Python works
+•    In each task, you keep importing the dataset again and creating new DataFrames. If you do this once at the beginning, it is sufficient. You don't need to re-import it in every cell of the same notebook. 
+•    This repeated importing suggests you may not have edited AI-generated code appropriately to fit a cohesive notebook structure
+•    You should acknowledge any use of AI tools in your work
+Actions for future work: 
+1)    Import libraries and datasets once at the beginning of a coherent notebook
+2)    Justify all threshold and parameter choices with data-driven reasoning
+3)    Add numbers and captions to your figures.
+4)    Use relative frequencies (percentages) rather than absolute counts throughout
+5)    Demonstrate understanding of perceptual principles when creating misinformative visualisations (don't just alter data)
+6)    Provide specific, concrete examples in reflections
+7)    Ensure consistency in design decisions across tasks
+8)    Use British English spelling consistently
+9)    Acknowledge any AI assistance used
+
+- Dr. Dimitris Mylonas
